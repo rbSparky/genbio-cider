@@ -1,0 +1,13 @@
+manifest_csv: data/metadata/assay_manifest.csv
+processed_dir: data/processed
+assay_ids_csv: data/metadata/hard_20_ids.csv
+seeds: [11]
+rounds: 3
+batch: 16
+obs_noise_std: 0.35
+obs_noise_hetero: 0.45
+methods:
+  - ucb
+  - cider_fixed
+  - cider_gpt_oss_20b
+  - folde

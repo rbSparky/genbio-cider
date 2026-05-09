@@ -1,0 +1,34 @@
+{
+  "quality": {
+    "L_method": "cider_gpt_oss_20b",
+    "best_non_cider": "ucb",
+    "L_top1": 0.9,
+    "B_top1": 0.85,
+    "delta": 0.050000000000000044,
+    "noninferior_2pt": true,
+    "superior_5pt_vs_best_non_cider": true,
+    "paired_mean_delta": 0.05
+  },
+  "efficiency": {
+    "invalid_rate_L": 0.0,
+    "invalid_rate_ok": true,
+    "compute_profile": "cpu_only"
+  },
+  "novelty": {
+    "has_ablation_file": true,
+    "claims": [
+      "conformal correction",
+      "top-tail objective",
+      "information-directed term",
+      "constrained controller + audit"
+    ]
+  },
+  "frontier_no_method": {
+    "method": "llm_grok41fast_only",
+    "top1": 0.7,
+    "delta_vs_local": 0.20000000000000007,
+    "strong_superiority_5pt": true,
+    "cost_total_usd": 7.7041900000000005,
+    "invalid_rate": 1.0
+  }
+}

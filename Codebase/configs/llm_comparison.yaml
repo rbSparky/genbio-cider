@@ -1,0 +1,9 @@
+manifest_csv: data/metadata/assay_manifest.csv
+processed_dir: data/processed
+assay_ids_csv: data/metadata/main_20_ids.csv
+seeds: [11, 23]
+methods:
+  - llm_gpt55_only
+  - llm_claude_opus47_only
+  - llm_gemini31pro_only
+  - llm_grok41fast_only

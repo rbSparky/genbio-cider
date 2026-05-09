@@ -1,0 +1,16 @@
+manifest_csv: data/metadata/assay_manifest.csv
+processed_dir: data/processed
+assay_ids_csv: data/metadata/hard_20_ids.csv
+seeds: [11, 23, 37]
+rounds: 3
+batch: 16
+methods:
+  - cider_gpt_oss_20b
+  - abl_no_conformal
+  - abl_no_info_gain
+  - abl_no_top_tail
+  - abl_no_dpp
+  - abl_no_redundancy_penalty
+  - abl_no_plm_prior
+  - cider_fixed
+  - local_lm_direct
